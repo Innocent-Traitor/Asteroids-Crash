@@ -14,11 +14,10 @@ if lost = true {
 	}
 }
 
-//Disable Audio
+// Audio Management
 if keyboard_check_pressed(ord("M")) {
 	global.mute = !global.mute;
 }
-
 switch (global.mute) {
 	case true:
 		audio_set_master_gain(0, 0);
@@ -41,6 +40,25 @@ if debug = true {
 	}
 }
 
+// Pausing
+if keyboard_check_pressed(ord("P")) {
+	paused = !paused;
+	if paused == false {
+		instance_activate_all();
+		surface_free(paused_surf);
+		paused_surf = -1;
+	}
+	if paused == true {
+		alarm[0]++;
+		if instance_exists(obj_player) {
+			obj_player.alarm[0]++;
+			obj_player.alarm[1]++;
+		}
+	}
+}
+ 
+// obj_player.alarm[0]++;
+// obj_player.alarm[1]++;
  
 // Quit upon Esc MUST BE LAST
 if keyboard_check_pressed(vk_escape){
