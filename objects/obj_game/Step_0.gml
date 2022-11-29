@@ -14,6 +14,16 @@ if lost = true {
 	}
 }
 
+// Debug
+if keyboard_check_pressed(ord("Q")) {
+	debug = true;
+}
+if debug = true {
+	switch (keyboard_key) {
+		case ord("T"):
+		break;
+	}
+}
 
  
 // Quit upon Esc MUST BE LAST
