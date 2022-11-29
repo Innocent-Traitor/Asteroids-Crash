@@ -14,13 +14,29 @@ if lost = true {
 	}
 }
 
+//Disable Audio
+if keyboard_check_pressed(ord("M")) {
+	global.mute = !global.mute;
+}
+
+switch (global.mute) {
+	case true:
+		audio_set_master_gain(0, 0);
+		break;
+	case false:
+		audio_set_master_gain(0, 1);
+		break;
+}
+
 // Debug
 if keyboard_check_pressed(ord("Q")) {
 	debug = true;
 }
 if debug = true {
 	switch (keyboard_key) {
+		// Force Create Powerup
 		case ord("T"):
+		instance_create_layer(500, 500, "Instances", obj_powerup);
 		break;
 	}
 }

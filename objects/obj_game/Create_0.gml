@@ -5,7 +5,8 @@ points = 0;
 bonusPoints = 0;
 life = 3;
 debug = false;
-audio_play_sound(gameStart, 100, false);
+alarm[5] = 1;
+//audio_play_sound(gameStart, 100, false);
 
 
 
