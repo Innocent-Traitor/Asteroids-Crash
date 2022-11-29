@@ -9,7 +9,7 @@ if debug = true {
 	draw_text(500, 50, "DEBUG");
 }
 
-// Pause
+// Pausing
 if paused == true {
 	if !surface_exists(paused_surf) {
 		if paused_surf == -1 {

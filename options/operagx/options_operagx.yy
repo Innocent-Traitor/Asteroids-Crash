@@ -2,8 +2,8 @@
   "resourceType": "GMOperaGXOptions",
   "resourceVersion": "1.0",
   "name": "operagx",
-  "option_operagx_version": "1.0.0.0",
-  "option_operagx_next_version": "1.0.0.1",
+  "option_operagx_version": "1.1.0.0",
+  "option_operagx_next_version": "1.1.0.1",
   "option_operagx_game_name": "Asteroid Crash",
   "option_operagx_interpolate_pixels": true,
   "option_operagx_scale": 0,
@@ -14,5 +14,5 @@
   "option_operagx_team_id": "27a1a1b7-34eb-45df-8fda-344d735de281",
   "option_operagx_editUrl": "https://create.gx.games/game/4a33fa07-6958-4699-baaf-e13c488a3aa8/edit",
   "option_operagx_internalShareUrl": "",
-  "option_operagx_publicShareUrl": "",
+  "option_operagx_publicShareUrl": "https://gx.games/games/26s0e1/asteroid-crash/",
 }

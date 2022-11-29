@@ -4,7 +4,7 @@
   "name": "Windows",
   "option_windows_display_name": "Asteroid Crash",
   "option_windows_executable_name": "Asteroid Crash.exe",
-  "option_windows_version": "1.0.0.0",
+  "option_windows_version": "1.1.0.0",
   "option_windows_company_info": "Moonsoft Studios",
   "option_windows_product_info": "",
   "option_windows_copyright_info": "",
