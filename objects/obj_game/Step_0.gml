@@ -57,9 +57,6 @@ if keyboard_check_pressed(ord("P")) {
 	}
 }
  
-// obj_player.alarm[0]++;
-// obj_player.alarm[1]++;
- 
 // Quit upon Esc MUST BE LAST
 if keyboard_check_pressed(vk_escape){
 	game_end();

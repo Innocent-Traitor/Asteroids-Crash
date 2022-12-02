@@ -8,6 +8,7 @@ Controls:
 * Arrow Keys - Movement
 * Space Bar - Shoot
 * M - Toggle Audio
+* ESC - Quit
 
 To-Do List:
 - [x] "Proper" Menu Navigation
@@ -22,4 +23,7 @@ To-Do List:
 - [ ] Change Menu Sprites into actual text
 
 Known Bugs:
-* Unpausing with a asteroid on top of a invincible player will cause the player to immediately die
+* Unpausing with a asteroid on top of a invincible player will cause the player to immediately die (FIXED)
+* Powerups will still spawn when the player is their inital inviciblity state (FIXED)
+* Asteroids destroyed by a invincible player will not cause more asteroids to be spawned. (FIXED)
+* Pausing will cause the player to no longer be invincible (FIXED)

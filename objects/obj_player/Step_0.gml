@@ -2,12 +2,19 @@
 
 
 //Remove Player invincible when they move
-if keyboard_check_pressed(vk_anykey){
-	invincible = false;
-	image_speed = 0;
-	image_index = 0;
+if invincible == true {
+	// Stops powerup spawn timer to prevent duplicate ones
+	alarm[0]++;
+	if (keyboard_check_pressed(vk_anykey)) && (!keyboard_check_pressed(ord("P"))){
+		// invincible = false;
+		invincibleTimer = true
+		image_speed = 0;
+		image_index = 0;
+		alarm[2] = 1;
+		
+	}
 }
-
+	
 // Arrow Key Movement
 // Need to cap player speed 
 if keyboard_check(vk_up) {
