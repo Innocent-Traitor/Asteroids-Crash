@@ -20,7 +20,7 @@ To-Do List:
 - [ ] Gamepad Support
 - [ ] Leaderboard (Local)
 - [ ] Leaderboard (Global(doubt this will ever happen))
-- [ ] Change Menu Sprites into actual text
+- [x] Change Menu Sprites into actual text
 
 Known Bugs:
 * Unpausing with a asteroid on top of a invincible player will cause the player to immediately die (FIXED)

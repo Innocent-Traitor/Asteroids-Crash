@@ -56,6 +56,11 @@ if keyboard_check_pressed(ord("P")) {
 		}
 	}
 }
+	
+// Restarting while paused
+if (paused = true) && keyboard_check_pressed(ord("R")) {
+	room_restart();
+}
  
 // Quit upon Esc MUST BE LAST
 if keyboard_check_pressed(vk_escape){

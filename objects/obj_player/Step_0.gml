@@ -16,9 +16,10 @@ if invincible == true {
 }
 	
 // Arrow Key Movement
-// Need to cap player speed 
 if keyboard_check(vk_up) {
+	if speed <= 10 {
 	motion_add(image_angle, 0.1);
+	}
 }
 if keyboard_check(vk_left) {
 	image_angle += 4;
@@ -27,27 +28,8 @@ if keyboard_check(vk_right) {
 	image_angle -= 4;
 }
 
-/* Switch Based Movement
- Not using this for the time being as it causes issues when shooting
- when shooting, it breaks the switch and stops player movement
-switch (keyboard_key) {
-	case vk_up:
-		motion_add(image_angle, 0.1);
-		break;
-	case vk_left:
-		image_angle += 4;
-		break;
-	case vk_right:
-		image_angle -= 4;
-		break;
-	default:
-		break;
-}
-*/
-
 // Screen Wrap
 move_wrap(true, true, 0);
-
 
 // Shooting
 if keyboard_check_pressed(vk_space) {
