@@ -1,7 +1,6 @@
 # Asteroids Crash
  An Asteroids Clone
 
-
 Itch.io play - https://innocenttraitor.itch.io/asteroid-crash
 
 Controls:
@@ -10,20 +9,24 @@ Controls:
 * M - Toggle Audio
 * ESC - Quit
 
+This was made mainly to teach myself GameMaker Studio 2, with the help some of the tutorials on GameMaker Studio's website.
+I'll come back to this project when I want to experiment with leaderboards or the gamepad support.
+For the time being, I wanna try to actually make a project and push it out.
+It'll more than likely be a mobile focused game so I can learn that system.
+
+
 To-Do List:
 - [x] "Proper" Menu Navigation
 - [x] Lives System
 - [x] Sounds
 - [x] Powerup System
-- [ ] 2 More Powerups (Going to have to rewrite the powerup system since I only made the one at first)
+- [x] 2 More Powerups
 - [x] Pausing
 - [ ] Gamepad Support
 - [ ] Leaderboard (Local)
-- [ ] Leaderboard (Global(doubt this will ever happen))
+- [ ] Leaderboard (Global(doubt this will ever happen(might happen idk)))
 - [x] Change Menu Sprites into actual text
 
 Known Bugs:
-* Unpausing with a asteroid on top of a invincible player will cause the player to immediately die (FIXED)
-* Powerups will still spawn when the player is their inital inviciblity state (FIXED)
-* Asteroids destroyed by a invincible player will not cause more asteroids to be spawned. (FIXED)
-* Pausing will cause the player to no longer be invincible (FIXED)
+* None that I know of
+* There are probably some there

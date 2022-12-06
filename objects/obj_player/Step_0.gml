@@ -33,19 +33,25 @@ move_wrap(true, true, 0);
 
 // Shooting
 if keyboard_check_pressed(vk_space) {
-	// Standard Shooting
-	if poweredup = false{
-		audio_play_sound(laserShoot, 5, false);
-		instance_create_layer(x, y, "Instances", obj_bullet,
-		{
-			speed : 10,
-			direction : image_angle
-		});
-	} else if poweredup = true {
-		audio_play_sound(laserShoot, 5, false);
-		// If powered up, shoot 3 bullets are the same time
-		instance_create_layer(x, y, "Instances", obj_bullet, {speed : 10, direction : image_angle});
-		instance_create_layer(x, y, "Instances", obj_bullet, {speed : 10, direction : image_angle + 10});
-		instance_create_layer(x, y, "Instances", obj_bullet, {speed : 10, direction : image_angle - 10});
+	switch (powerup) {
+		case "Trishot": // Shoot 3 shots
+			audio_play_sound(laserShoot, 5, false);
+			instance_create_layer(x, y, "Instances", obj_bullet, {speed : 10, direction : image_angle});
+			instance_create_layer(x, y, "Instances", obj_bullet, {speed : 10, direction : image_angle + 10});
+			instance_create_layer(x, y, "Instances", obj_bullet, {speed : 10, direction : image_angle - 10});
+		break;
+		case "MachGun":
+			// Do nothing, this will be done via the Space Pressed Event.
+		break;
+		default: // This is both for no powerup, and for Invul
+			audio_play_sound(laserShoot, 5, false);
+			instance_create_layer(x, y, "Instances", obj_bullet, {speed : 10, direction : image_angle});
+		break;
 	}
 }
+
+/*
+instance_create_layer(x, y, "Instances", obj_bullet, {speed : 10, direction : image_angle});
+instance_create_layer(x, y, "Instances", obj_bullet, {speed : 10, direction : image_angle + 10});
+instance_create_layer(x, y, "Instances", obj_bullet, {speed : 10, direction : image_angle - 10});
+*/

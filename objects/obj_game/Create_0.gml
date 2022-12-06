@@ -11,7 +11,7 @@ paused_surf = -1;
 
 
 alarm[5] = 1;
-
+randomise(); //Uncomment this before sending out builds
 
 
 

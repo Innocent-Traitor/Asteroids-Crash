@@ -33,7 +33,8 @@ if keyboard_check_pressed(ord("Q")) {
 }
 if debug = true {
 	switch (keyboard_key) {
-		// Force Create Powerup
+		// Force Create Powerup | Realized this spam spawn powerups. mfer
+		// Change this to a if statement or make a while based loop that waits like a second or something idk
 		case ord("T"):
 		instance_create_layer(500, 500, "Instances", obj_powerup);
 		break;

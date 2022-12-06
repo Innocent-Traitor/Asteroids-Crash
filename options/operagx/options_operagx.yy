@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "operagx",
   "option_operagx_version": "1.1.0.0",
-  "option_operagx_next_version": "1.1.0.1",
+  "option_operagx_next_version": "1.2.0.0",
   "option_operagx_game_name": "Asteroid Crash",
   "option_operagx_interpolate_pixels": true,
   "option_operagx_scale": 0,
