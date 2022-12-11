@@ -5,7 +5,8 @@
 if invincible == true {
 	// Stops powerup spawn timer to prevent duplicate ones
 	alarm[0]++;
-	if (keyboard_check_pressed(vk_anykey)) && (!keyboard_check_pressed(ord("P"))){
+	// Remove Invin if player moves OR presses space AND is not P
+	if (speed > 0) || (keyboard_check_pressed(vk_space)) && (!keyboard_check_pressed(ord("P"))){
 		// invincible = false;
 		invincibleTimer = true
 		image_speed = 0;

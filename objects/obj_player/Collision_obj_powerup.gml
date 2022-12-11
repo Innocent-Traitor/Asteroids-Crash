@@ -1,7 +1,7 @@
 /// @description Power up Collison
 
 // Give Powerup depending on which power spawned.
-switch (obj_powerup._power) {
+switch (obj_powerup.powerPick) {
 	case 0:
 		powerup = powerupArray[0]; // Trishot
 	break;

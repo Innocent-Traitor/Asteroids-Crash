@@ -5,6 +5,7 @@
 if debug = true {
 	draw_text(500, 50, "DEBUG");
 	draw_text(500, 100, "Speed: " + string(obj_player.speed)); //hardcore mode: dont die or else you crash
+	draw_text(500, 150, "FPS: " + string(fps));
 }
 
 // HUD Check: Pausing > Lost Screen > HUD
@@ -39,9 +40,10 @@ if paused == true {
 else if lost = true {
 	draw_set_halign(fa_center);
 	draw_set_font(ft_fontLarge);
-	draw_text(500, 400, "You Lose");
-	draw_text(500, 500, "Total Score: " + string(points));
-	draw_text(500, 600, "Press any button to restart");
+	draw_text(500, 200, "You Lose");
+	draw_text(500, 300, "Total Score: " + string(points));
+	draw_text(500, 400, "Press any button to restart");
+	draw_text(500, 550, "Leaderboard: \n" + string(LLHighscoresTopFormatted()));
 	draw_set_halign(fa_left);
 }
 
@@ -49,5 +51,10 @@ else if lost = true {
 else {
 draw_set_font(ft_hud);
 draw_text(10, 10, "Score: " + string(points));
-draw_text(10, 30, "Lives: " + string(life));
+draw_text(10, 30, "Lives:");
+var _x = 15;
+repeat(life) {
+draw_sprite_ext(spr_player, 0, _x, 60, .25, .25, 90, c_white, .5);
+_x += 20;
+}
 }

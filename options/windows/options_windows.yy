@@ -4,7 +4,7 @@
   "name": "Windows",
   "option_windows_display_name": "Asteroid Crash",
   "option_windows_executable_name": "Asteroid Crash.exe",
-  "option_windows_version": "1.2.0.0",
+  "option_windows_version": "1.3.0.0",
   "option_windows_company_info": "Moonsoft Studios",
   "option_windows_product_info": "",
   "option_windows_copyright_info": "",
@@ -29,6 +29,6 @@
   "option_windows_license": "${base_options_dir}/windows/installer/license.txt",
   "option_windows_nsis_file": "${base_options_dir}/windows/installer/nsis_script.nsi",
   "option_windows_enable_steam": false,
-  "option_windows_disable_sandbox": false,
+  "option_windows_disable_sandbox": true,
   "option_windows_steam_use_alternative_launcher": false,
 }

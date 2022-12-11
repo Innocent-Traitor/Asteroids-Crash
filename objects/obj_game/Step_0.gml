@@ -1,7 +1,7 @@
 /// @description Point and Pausing
 
-// Every 1000 points, grant user a new life
-if bonusPoints >= 1000 {
+// Every 2500 points, grant user a new life
+if bonusPoints >= 2500 {
 	life += 1;
 	bonusPoints -= 1000;
 	audio_play_sound(newLife, 75, false);
@@ -65,5 +65,5 @@ if (paused = true) && keyboard_check_pressed(ord("R")) {
  
 // Quit upon Esc MUST BE LAST
 if keyboard_check_pressed(vk_escape){
-	game_end();
+	room_goto(rm_menu);
 }
